@@ -22,10 +22,17 @@ ul {
     background-color: var(--lightblue);
 }
 
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+}
+
 main {
+    flex: 1;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
 }
 
 .projects {
@@ -51,22 +58,60 @@ main {
     border-radius: 50%;
 }
 
+header {
+    padding: 10px 30px;
+}
+
 .header1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.searchbar {
     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchbar input {
+    flex: 1;
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 .header2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
-.header1 > div {
+.welcomemsg {
     display: flex;
-    align-items: center;
-    flex: 1;
+    gap: 20px
 }
 
-.header2 > div {
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--lightblue);
+    color: white;
+    border: none;
+}
+
+.buttons {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    flex: 1;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
 }
