@@ -10,22 +10,21 @@
 <body>
     <div class="dashboard">
         <div class="menu">
-            <div>
-                <img src="" alt="">
-                <h2>Dashboard</h2>
+            <div class="menutitle">
+                <img src="images/view-dashboard.svg" alt="">
+                <h1>Dashboard</h1>
             </div>
-            <div class=options>
+            <div class="options">
                 <ul>
-                    <li><img src="images/home-icon.png" alt="Home Icon" class="icon">Home</li>
-                    <li><img src="images/profile-icon.png" alt="Profile Icon" class="icon">Profile</li>
-                    <li><img src="images/message-icon.png" alt="Messages Icon" class="icon">Messages</li>
-                    <li><img src="images/history-icon.png" alt="History Icon" class="icon">History</li>
-                    <li><img src="images/tasks-icon.gif" alt="Tasks Icon" class="icon">Tasks</li>
-                    <li><img src="images/communities-icon.png" alt="Communities Icon" class="icon">Communities</li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="images/settings-icon.png" alt="Settings Icon" class="icon">Settings</li>
-                    <li><img src="images/support-icon.png" alt="Support Icon" class="icon">Support</li>
-                    <li><img src="images/privacy-icon.png" alt="Privacy Icon" class="icon">Privacy</li>
+                    <li><img src="images/home.svg" alt="Home Icon" class="icon">Home</li>
+                    <li><img src="images/profile.svg" alt="Profile Icon" class="icon">Profile</li>
+                    <li><img src="images/message.svg" alt="Messages Icon" class="icon">Messages</li>
+                    <li><img src="images/clock.svg" alt="History Icon" class="icon">History</li>
+                    <li><img src="images/tasks.svg" alt="Tasks Icon" class="icon">Tasks</li>
+                    <li><img src="images/communities.svg" alt="Communities Icon" class="icon">Communities</li>
+                    <li class="separate"><img src="images/cog.svg" alt="Settings Icon" class="icon">Settings</li>
+                    <li><img src="images/help-box.svg" alt="Support Icon" class="icon">Support</li>
+                    <li><img src="images/shield-check.svg" alt="Privacy Icon" class="icon">Privacy</li>
                 </ul>
             </div>
             <div>
@@ -34,22 +33,22 @@
         <div class="maincontainer">
             <header>
                 <div class="header1">
-                    <div class="searchbar">
-                        <label for="search"><img src="images/search-icon.png" alt="Search Icon" class="icon"></label>
+                    <label for="search">
+                        <img src="images/search.svg" alt="Search Icon" class="icon">
                         <input type="search" name="search" id="search">
-                    </div>
+                    </label>
                     <div class="nav">
-                        <img src="images/notification-icon.png" alt="Notifications Icon" class="icon">
-                        <img src="images/profile-picture.png" alt="" class="profilepic">
-                        <p>Morgan Oakley</p>
+                        <img src="images/bell-ring-outline.svg" alt="Notifications Icon" class="icon">
+                        <img src="images/profilepic-1.png" alt="" class="profilepic">
+                        <h4>Morgan Oakley</h4>
                     </div>
                 </div>
                 <div class="header2">
                     <div class="welcomemsg">
-                        <img src="images/profile-picture.png" alt="" class="profilepic">
+                        <img src="images/profilepic-1.png" alt="" class="profilepic">
                         <div>
-                            <p>Hi there,</p>
-                            <p class="username">Morgan Oakley (@morgan)</p>
+                            <h5>Hi there,</h5>
+                            <h2 class="username">Morgan Oakley (@morgan)</h2>
                         </div>
                     </div>
                     <div class="buttons">
@@ -61,76 +60,89 @@
                 <div></div>
             </header>
             <main>
+                <h2>Your Projects</h2>
                 <div class="projects">
                     <div class="project">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos libero itaque eum nulla dolor asperiores assumenda, nisi a rem saepe?</p>
-                        <div><img src="images/favorites-icon.png" alt="Favorites Icon" class="icon"><img src="images/watchlist-icon.png" alt="Watchlist Icon" class="icon"><img src="images/share-icon.png" alt="Share Icon" class="icon"></div>
+                        <div>
+                            <h3>Super Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos libero itaque eum nulla dolor asperiores assumenda, nisi a rem saepe?</p>
+                        </div>
+                        <div class="projectbtns"><img src="images/star-plus-outline.svg" alt="Favorites Icon" class="icon"><img src="images/eye-plus-outline.svg" alt="Watchlist Icon" class="icon"><img src="images/source-fork.svg" alt="Fork Icon" class="icon"></div>
                     </div>
                     <div class="project">
-                        <h4>Less Cool Project</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus delectus ab, exercitationem sapiente facilis repellendus sed cum consequuntur tempora dolores minima laborum illo animi repellat quidem, nulla necessitatibus debitis quo soluta architecto. Consequatur laudantium ratione dolore iusto illo distinctio!</p>
-                        <div><img src="images/favorites-icon.png" alt="Favorites Icon" class="icon"><img src="images/watchlist-icon.png" alt="Watchlist Icon" class="icon"><img src="images/share-icon.png" alt="Share Icon" class="icon"></div>
+                        <div>
+                            <h3>Less Cool Project</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus delectus ab, exercitationem sapiente facilis repellendus sed cum consequuntur tempora dolores minima laborum illo animi repellat quidem, nulla necessitatibus debitis quo soluta architecto. Consequatur laudantium ratione dolore iusto illo distinctio!</p>
+                        </div>
+                        <div class="projectbtns"><img src="images/star-plus-outline.svg" alt="Favorites Icon" class="icon"><img src="images/eye-plus-outline.svg" alt="Watchlist Icon" class="icon"><img src="images/source-fork.svg" alt="Fork Icon" class="icon"></div>
                     </div>
                     <div class="project">
-                        <h4>Impossible App</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, commodi sed assumenda fugiat esse modi?</p>
-                        <div><img src="images/favorites-icon.png" alt="Favorites Icon" class="icon"><img src="images/watchlist-icon.png" alt="Watchlist Icon" class="icon"><img src="images/share-icon.png" alt="Share Icon" class="icon"></div>
+                        <div>
+                            <h3>Impossible App</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, commodi sed assumenda fugiat esse modi?</p>
+                        </div>
+                        <div class="projectbtns"><img src="images/star-plus-outline.svg" alt="Favorites Icon" class="icon"><img src="images/eye-plus-outline.svg" alt="Watchlist Icon" class="icon"><img src="images/source-fork.svg" alt="Fork Icon" class="icon"></div>
                     </div>
                     <div class="project">
-                        <h4>Easy Peasy App</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempore corporis quos dolores fuga molestiae odit placeat est. Pariatur repudiandae, iste corporis vitae quia velit facere fugit odio ab aut.</p>
-                        <div><img src="images/favorites-icon.png" alt="Favorites Icon" class="icon"><img src="images/watchlist-icon.png" alt="Watchlist Icon" class="icon"><img src="images/share-icon.png" alt="Share Icon" class="icon"></div>
+                        <div>
+                            <h3>Easy Peasy App</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempore corporis quos dolores fuga molestiae odit placeat est. Pariatur repudiandae, iste corporis vitae quia velit facere fugit odio ab aut.</p>
+                        </div>
+                        <div class="projectbtns"><img src="images/star-plus-outline.svg" alt="Favorites Icon" class="icon"><img src="images/eye-plus-outline.svg" alt="Watchlist Icon" class="icon"><img src="images/source-fork.svg" alt="Fork Icon" class="icon"></div>
                     </div>
                     <div class="project">
-                        <h4>Ad Blocker</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio asperiores aspernatur qui minima nobis earum esse dolores accusamus voluptas aliquid?</p>
-                        <div><img src="images/favorites-icon.png" alt="Favorites Icon" class="icon"><img src="images/watchlist-icon.png" alt="Watchlist Icon" class="icon"><img src="images/share-icon.png" alt="Share Icon" class="icon"></div>
+                        <div>
+                            <h3>Ad Blocker</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio asperiores aspernatur qui minima nobis earum esse dolores accusamus voluptas aliquid?</p>
+                        </div>
+                        <div class="projectbtns"><img src="images/star-plus-outline.svg" alt="Favorites Icon" class="icon"><img src="images/eye-plus-outline.svg" alt="Watchlist Icon" class="icon"><img src="images/source-fork.svg" alt="Fork Icon" class="icon"></div>
                     </div>
                     <div class="project">
-                        <h4>Money Maker</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel doloremque, maiores suscipit in porro autem nemo provident incidunt voluptatibus fuga similique consequuntur possimus aut?</p>
-                        <div><img src="images/favorites-icon.png" alt="Favorites Icon" class="icon"><img src="images/watchlist-icon.png" alt="Watchlist Icon" class="icon"><img src="images/share-icon.png" alt="Share Icon" class="icon"></div>
+                        <div>
+                            <h3>Money Maker</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel doloremque, maiores suscipit in porro autem nemo provident incidunt voluptatibus fuga similique consequuntur possimus aut?</p>
+                        </div>
+                        <div class="projectbtns"><img src="images/star-plus-outline.svg" alt="Favorites Icon" class="icon"><img src="images/eye-plus-outline.svg" alt="Watchlist Icon" class="icon"><img src="images/source-fork.svg" alt="Fork Icon" class="icon"></div>
                     </div>
                 </div>
+                <h2>Announcements</h2>
                 <div class="announcements">
-                    <h2>Announcements</h2>
-                    <h6>Site Maintenance</h6>
+                    <h4>Site Maintenance</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla itaque natus sed adipisci quos perferendis sunt distinctio enim doloremque laudantium beatae autem, velit dolore.</p>
                     <hr>
-                    <h6>Community Share Day</h6>
+                    <h4>Community Share Day</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quam voluptatum cum quis beatae commodi, facilis atque aliquam quidem porro.</p>
                     <hr>
-                    <h6>Updated Privacy Policy</h6>
+                    <h4>Updated Privacy Policy</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi esse, fugiat, ex, itaque quibusdam porro suscipit alias consequatur repudiandae voluptate minus beatae dolor vel eius.</p>
                 </div>
+                <h2>Trending</h2>
                 <div class="trending">
-                    <h2>Trending</h2>
                     <div class="profile">
-                        <img src="images/profile-picture.png" alt="" class="profilepic">
+                        <img src="images/profilepic-2.png" alt="" class="profilepic">
                         <div>
-                            <h6>@tegan</h6>
+                            <h4>@tegan</h4>
                             <p>World Peace Builder</p>
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="images/profile-picture.png" alt="" class="profilepic">
+                        <img src="images/profilepic-3.png" alt="" class="profilepic">
                         <div>
-                            <h6>@morgan</h6>
+                            <h4>@morgan</h4>
                             <p>Super Cool Project</p>
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="images/profile-picture.png" alt="" class="profilepic">
+                        <img src="images/profilepic-4.png" alt="" class="profilepic">
                         <div>
-                            <h6>@kendall</h6>
+                            <h4>@kendall</h4>
                             <p>Life Changing App</p>
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="images/profile-picture.png" alt="" class="profilepic">
+                        <img src="images/profilepic-5.png" alt="" class="profilepic">
                         <div>
-                            <h6>@alex</h6>
+                            <h4>@alex</h4>
                             <p>No Traffic Maker</p>
                         </div>
                     </div>

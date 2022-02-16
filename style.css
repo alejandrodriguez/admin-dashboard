@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
     --lightblue: #1992d4;
     --yellow: #f0b429;
+    --lightgray: #cbd5e1;
+    --gray: #4a4d52;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -15,11 +20,14 @@ ul {
 .dashboard {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    height: 100vh;
 }
 
 .menu {
     background-color: var(--lightblue);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .maincontainer {
@@ -31,52 +39,81 @@ main {
     flex: 1;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1.5rem auto);
     gap: 15px;
+    padding: 30px;
+    background-color: var(--lightgray);
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    grid-row: 1 / 3;
+    grid-row: 2 / 5;
 }
 
 .project {
-    border: 1px solid black;
+    border-left: 10px solid var(--yellow);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+}
+
+.project .icon {
+    margin-left: 1vw;
+}
+
+.project :not(.projectbtns) {
+    flex: 1;
+}
+
+.projectbtns {
+    margin-left: auto;
+    max-height: 15%;
 }
 
 .icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
 
 .profilepic {
     height: 50px;
     width: 50px;
-    border: 1px solid black;
     border-radius: 50%;
 }
 
+.header2 .profilepic {
+    height: 75px;
+    width: 75px;
+}
+
 header {
-    padding: 10px 30px;
+    padding: 10px 50px;
+    font-weight: bold;
 }
 
 .header1 {
     display: grid;
     grid-template-columns: 3fr 1fr;
-}
-
-.searchbar {
-    display: flex;
     align-items: center;
-    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.searchbar input {
+label[for="search"] {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+label[for="search"] input {
     flex: 1;
-    max-width: 70%;
+    max-width: 60%;
+    border: none;
     border-radius: 10px;
+    height: 25px;
+    padding: 10px;
+    background-color: #cbd5e1;
 }
 
 .nav {
@@ -93,7 +130,8 @@ header {
 
 .welcomemsg {
     display: flex;
-    gap: 20px
+    gap: 20px;
+    align-items: center;
 }
 
 button {
@@ -103,6 +141,15 @@ button {
     background-color: var(--lightblue);
     color: white;
     border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0d5c86;
+}
+
+button:active {
+    transform: scale(.95, .95);
 }
 
 .buttons {
@@ -114,4 +161,69 @@ button {
 
 .profile {
     display: flex;
+    gap: 15px;
+}
+
+.announcements {
+    grid-row: 2 / 3;
+    padding: 40px;
+}
+
+.trending {
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+}
+
+main > h2 {
+    margin: auto 0 0 0;
+}
+
+.project,
+.announcements,
+.trending {
+    border-radius: 10px;
+    background-color: white;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+p {
+    color: var(--gray);
+    margin-top: 5px;
+}
+
+.menu img {
+    margin: 0 20px 0 10px;
+    filter: invert(100%);
+}
+
+.menutitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.menutitle img {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.separate {
+    margin-top: 60px;
 }
