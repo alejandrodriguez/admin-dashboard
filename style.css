@@ -1,0 +1,72 @@
+:root {
+    --lightblue: #1992d4;
+    --yellow: #f0b429;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+.menu {
+    background-color: var(--lightblue);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    grid-row: 1 / 3;
+}
+
+.project {
+    border: 1px solid black;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.profilepic {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.header1 {
+    display: flex;
+}
+
+.header2 {
+    display: flex;
+}
+
+.header1 > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.header2 > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
